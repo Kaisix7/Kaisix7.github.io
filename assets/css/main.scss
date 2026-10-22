@@ -53,3 +53,217 @@
     display: none !important;
   }
 }
+
+/* Karina portfolio: crystal-dark research system. Pure CSS appended to existing al-folio Sass. */
+:root { --kb-ink: #d8e7e6; --kb-line: rgba(123,225,213,.18); --kb-glass: rgba(20,45,53,.7); --kb-glow: #68dbce; }
+body { background-image: radial-gradient(ellipse 50% 22% at 90% 0%, rgba(17,139,155,.12), transparent), radial-gradient(ellipse 38% 19% at 4% 35%, rgba(78,116,222,.08), transparent) !important; background-attachment: fixed !important; }
+#navbar { backdrop-filter: blur(18px) saturate(135%); -webkit-backdrop-filter: blur(18px) saturate(135%); border-bottom: 1px solid var(--kb-line) !important; background: rgba(14,25,34,.91) !important; }
+#navbar .navbar-brand { font-weight: 600 !important; letter-spacing: -.035em; }
+#navbar .navbar-menu-list .nav-link { transition: color .18s ease, transform .18s ease; }
+#navbar .navbar-menu-list .nav-link:hover { color: #72e5d8 !important; transform: translateY(-1px); }
+main h1, main .post-title, main .post-header h1 { letter-spacing: -.055em; font-weight: 650; }
+main h1 { background: linear-gradient(110deg, #eefeff 12%, #9de9e5 55%, #b6bcff 92%); -webkit-background-clip: text; background-clip: text; color: transparent; }
+main h2 { letter-spacing: -.035em; margin-top: 2rem; padding-left: .8rem; border-left: 3px solid #7adace; }
+main h3 { letter-spacing: -.02em; }
+main p { line-height: 1.78; }
+main hr { border: 0; border-top: 1px solid var(--kb-line); margin: 2.2rem 0; }
+main table { width: 100%; display: table; border-collapse: separate !important; border-spacing: 0 !important; border: 1px solid rgba(100,198,207,.22) !important; border-radius: 16px; overflow: hidden; background: linear-gradient(140deg, rgba(48,79,93,.28), rgba(43,44,83,.15)); box-shadow: 0 12px 38px rgba(1,13,21,.12); margin: 1.3rem 0 2.2rem; }
+main table th { background: rgba(83,171,170,.16) !important; color: #c5faf1 !important; font-size: .93rem; font-weight: 650; }
+main table th, main table td { text-align: left; border-bottom: 1px solid rgba(113,196,203,.12) !important; padding: 1rem 1.08rem !important; vertical-align: top; line-height: 1.6; }
+main table tr:last-child td { border-bottom: none !important; }
+main table tbody tr { transition: background-color .2s ease; }
+main table tbody tr:hover { background: rgba(68,175,174,.09); }
+main table a { font-weight: 650; text-decoration: none; }
+main blockquote { border-radius: 0 12px 12px 0; border-left: 3px solid #5ad3be; padding: .9rem 1.1rem; background: rgba(35,92,104,.15); }
+main a { text-underline-offset: .2em; }
+@media (min-width: 576px) { #navbar.navbar-expand-sm .navbar-collapse-main { display: flex !important; visibility: visible !important; opacity: 1 !important; flex-basis: auto !important; } #navbar.navbar-expand-sm .navbar-menu-list { display: flex !important; flex-direction: row !important; align-items: center !important; margin-left: auto !important; } #navbar.navbar-expand-sm .navbar-toggler-main { display: none !important; } }
+@media (max-width: 680px) { main table { display: block; overflow-x: auto; border-radius: 12px; } main table th, main table td { padding: .75rem !important; min-width: 7rem; } main h2 { font-size: 1.5rem; } }
+@media (prefers-reduced-motion: reduce) { #navbar .navbar-menu-list .nav-link, main table tbody tr { transition: none !important; } }
+/* Light appearance should stay readable when the theme toggle is used. */
+html:not([data-theme="dark"]) main table { background: rgba(120,164,175,.08); }
+html:not([data-theme="dark"]) main table th { color: #165c60 !important; background: rgba(60,138,152,.12) !important; }
+html:not([data-theme="dark"]) main h1 { background: none; color: inherit; }
+
+
+/* Karina: profile layout repair */
+
+@media screen and (min-width: 576px) {
+  .container[role="main"] .profile,
+  .container[role="main"] .post .profile {
+    float: right !important;
+    width: 28% !important;
+    max-width: 260px !important;
+    margin: 0 0 1.5rem 2rem !important;
+  }
+
+  .container[role="main"] .profile img,
+  .container[role="main"] .post .profile img {
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+    max-height: 320px !important;
+    object-fit: cover !important;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .container[role="main"] .profile,
+  .container[role="main"] .post .profile {
+    float: none !important;
+    width: 100% !important;
+    max-width: 280px !important;
+    margin: 1rem auto 1.5rem !important;
+  }
+
+  .container[role="main"] .profile img,
+  .container[role="main"] .post .profile img {
+    width: 100% !important;
+    height: auto !important;
+    max-height: 320px !important;
+    object-fit: cover !important;
+  }
+}
+
+
+/* Karina: controlled About layout */
+
+@media (min-width: 768px) {
+
+  .container[role="main"] .post article:has(> .profile) {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) 240px !important;
+    column-gap: 32px !important;
+    align-items: start !important;
+  }
+
+  .container[role="main"] .post article > .profile {
+    grid-column: 2 !important;
+    grid-row: 1 !important;
+    float: none !important;
+    position: static !important;
+    width: 240px !important;
+    max-width: 240px !important;
+    min-height: 0 !important;
+    height: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .container[role="main"] .post article > .profile figure {
+    width: 100% !important;
+    margin: 0 !important;
+  }
+
+  .container[role="main"] .post article > .profile img {
+    display: block !important;
+    width: 100% !important;
+    height: 240px !important;
+    max-height: 240px !important;
+    object-fit: cover !important;
+    object-position: center top !important;
+  }
+
+  .container[role="main"] .post article > .clearfix {
+    grid-column: 1 !important;
+    grid-row: 1 !important;
+    min-width: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .container[role="main"] .post article > .social {
+    grid-column: 1 / -1 !important;
+  }
+}
+
+@media (max-width: 767px) {
+
+  .container[role="main"] .post article:has(> .profile) {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 20px !important;
+  }
+
+  .container[role="main"] .post article > .profile {
+    float: none !important;
+    position: static !important;
+    width: 100% !important;
+    max-width: 230px !important;
+    margin: 0 auto !important;
+  }
+
+  .container[role="main"] .post article > .profile img {
+    width: 100% !important;
+    height: 230px !important;
+    object-fit: cover !important;
+    object-position: center top !important;
+  }
+
+  .container[role="main"] .post article > .clearfix {
+    width: 100% !important;
+    margin: 0 !important;
+  }
+}
+
+/* End Karina About layout */
+
+
+/* Karina full-length portrait preservation */
+
+.container[role="main"] .post article > .profile {
+  float: none !important;
+  width: 100% !important;
+  max-width: 350px !important;
+  height: auto !important;
+  min-height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.container[role="main"] .post article > .profile figure {
+  width: 100% !important;
+  height: auto !important;
+  max-height: none !important;
+  margin: 0 !important;
+  overflow: visible !important;
+}
+
+.container[role="main"] .post article > .profile img {
+  display: block !important;
+  width: 100% !important;
+  height: auto !important;
+  max-height: none !important;
+  aspect-ratio: auto !important;
+  object-fit: contain !important;
+  object-position: center !important;
+  border-radius: 12px !important;
+  clip-path: none !important;
+}
+
+@media (min-width: 768px) {
+  .container[role="main"] .post article:has(> .profile) {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) minmax(260px, 350px) !important;
+    gap: 2rem !important;
+    align-items: start !important;
+  }
+
+  .container[role="main"] .post article > .profile {
+    grid-column: 2 !important;
+    grid-row: 1 !important;
+  }
+
+  .container[role="main"] .post article > .clearfix {
+    grid-column: 1 !important;
+    grid-row: 1 !important;
+    min-width: 0 !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .container[role="main"] .post article > .profile {
+    width: 100% !important;
+    max-width: 350px !important;
+    margin: 0 auto !important;
+  }
+}

@@ -2,17 +2,16 @@
 layout: about
 title: about
 permalink: /
-subtitle: Software Engineering | Secure Systems | Application Security
+subtitle: Software Engineering | Software Security | Research in Progress
 nav: false
 nav_order: 1
 profile:
   align: right
   image: prof_pic.jpg
-  image_circular: true
+  image_circular: false
   more_info: >-
-    <p>Software Engineering Student</p>
-    <p>Application Security & Software Testing</p>
-    <p>Expected Graduation: 2028</p>
+    <p>Software Engineering · Class of 2028</p>
+    <p>Application Security & Secure Systems</p>
 selected_papers: false
 social: true
 announcements:
@@ -21,28 +20,42 @@ latest_posts:
   enabled: false
 ---
 
-I'm **Karina Baitenova**, a software engineering student interested in what makes software dependable, especially when it is exposed to real users, unpredictable inputs, and security threats.
+# Hi, I'm Karina.
 
-I've been learning how applications are designed, tested, and maintained. The more I study software engineering, the more interested I become in the problems that appear between writing code and trusting it. A feature can work during a demonstration and still fail under unusual inputs, bad configuration, or an overlooked authorization check.
+I study software engineering, and the part I keep coming back to is what happens when an application is pushed beyond the happy path. A login flow works until a token is handled incorrectly. An API looks reliable until it receives input nobody thought to test. A simple dependency can introduce a problem nobody notices during development.
 
-That's the direction I want to explore: **secure software engineering, vulnerability analysis, and developer-focused security tools**.
+I'm interested in building **software that can stand up to closer inspection**. That has led me toward application security, vulnerability analysis, automated testing, and the practical side of DevSecOps.
 
-I'm currently planning three independent projects:
+I expect to graduate in **2028**. Afterward, I want to move directly into an English-taught research-oriented master's degree in **Applied Artificial Intelligence, Information Security, or Security Informatics**, or an eligible **direct-entry Computer Science PhD focused on cybersecurity**. My interests are still developing, but software and systems security is the direction I want to pursue seriously.
 
-- **CommitGuard:** checks repositories and development workflows for exposed secrets and vulnerable dependencies.
-- **FuzzRoute:** explores automated testing of REST APIs using OpenAPI definitions and controlled test inputs.
-- **AuthAudit:** looks for risky authentication and token-validation patterns in source code.
+## What I'm building toward
 
-These are projects in development, not finished products. I intend to publish their source code, limitations, test cases, and results as they become available.
+| Software security | Developer tools | Research |
+| :--- | :--- | :--- |
+| Understand why real applications fail and how vulnerabilities can be reproduced safely. | Make security checks useful during development, not a last-minute obstacle. | Compare methods fairly and publish evidence that others can inspect. |
 
-I study software engineering in a Russian-language group and plan to continue my graduate education in English after graduating in **2028**. I'm exploring programs in information security, software engineering, applied artificial intelligence, and computer science, with a particular interest in security-focused research.
+## Projects on my workbench
 
-My [research plan](/research/) explains what I'm working toward. I also keep notes on the [blog](/blog/) as I learn and test ideas.
+| Project | Direction | Current stage |
+| :--- | :--- | :--- |
+| [**CommitGuard**](/projects/#commitguard) | Secret exposure and dependency checks in CI | In development |
+| [**FuzzRoute**](/projects/#fuzzroute) | Controlled security testing of REST APIs | In development |
+| [**AuthAudit**](/projects/#authaudit) | JWT and OAuth configuration analysis | In development |
+| [**Hybrid microservices analysis**](/projects/#graduation-capstone) | Proposed graduation capstone | Proposed |
 
-### Find my work
+I don't want to present a project as finished just because its idea sounds good. My goal is to build these tools, document the choices behind them, test them on systems I'm authorized to use, and publish results that can actually be checked.
 
-- [GitHub](https://github.com/Kaisix7)
-- [ResearchGate](https://www.researchgate.net/profile/Karina-Baitenova?ev=hdr_xprf)
-- [ORCID](https://orcid.org/0009-0003-4256-6862)
+## Beyond the code
 
-I'm interested in connecting with people working on application security, software testing, and reliable systems.
+I'm developing my academic writing and research skills alongside my engineering coursework. My planned empirical study looks at security anti-patterns in open-source React and Flutter applications. The point is not to collect alarming statistics. It's to identify recurring patterns, manually verify findings, and make the methodology reproducible.
+
+You can read more about the [research direction](/research/) or the [projects](/projects/).
+
+## Find me online
+
+| Professional | Research | Code |
+| :--- | :--- | :--- |
+| [**LinkedIn ↗**](https://www.linkedin.com/in/karina-b-a022311b1x) | [**ORCID ↗**](https://orcid.org/0009-0003-4256-6862) | [**GitHub ↗**](https://github.com/Kaisix7) |
+| Career and professional connections | [**ResearchGate ↗**](https://www.researchgate.net/profile/Karina-Baitenova) | Source code and experiments |
+
+I'm always interested in thoughtful conversations about secure software, testing, and research that might make everyday development a little more dependable.
