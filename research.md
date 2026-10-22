@@ -4,36 +4,64 @@ title: research
 permalink: /research/
 nav: true
 nav_order: 4
-description: Research interests, questions and graduate preparation.
+description: Research questions, experimental plans, and postgraduate direction.
 ---
 
-My main research question is straightforward: **how can security testing become a normal, useful part of building software instead of a separate step at the end?**
+# Research questions worth testing
 
-I am particularly interested in three connected areas: vulnerability analysis in web services, developer-friendly security automation, and the reliability of authentication systems.
+I want to work on software security problems that can be studied with code, clear methodology, and reproducible evidence. My main interest is **automated vulnerability analysis for real software workflows**, especially where traditional static checks and runtime behavior tell different stories.
 
-## Study idea
+## Research focus
+
+| Area | What I'm interested in | Question I'm still working through |
+| :--- | :--- | :--- |
+| **Vulnerability analysis** | Program analysis and finding insecure behavior in applications | Which findings remain meaningful after manual review? |
+| **API and systems testing** | Fuzzing, input validation, authentication boundaries | How can testing reach important failure cases without producing unnecessary noise? |
+| **DevSecOps** | Security feedback inside developer workflows | What makes a security report useful enough for a developer to act on? |
+| **Applied AI** | Carefully evaluated assistance in code and security analysis | When does a model add value, and when does it introduce uncertainty? |
+
+## Proposed empirical study
 
 **Working title:** *Security Anti-Patterns in Open-Source React and Flutter Applications: An Empirical Study*
 
-This is a research proposal, not a published paper or completed dataset. I plan to select a reproducible sample of public repositories, define inclusion criteria, run established static-analysis tools, manually review a subset of findings, and report limitations alongside the results.
+This is an idea I want to develop into an undergraduate research project. It has **not** been completed, submitted, or published.
 
-Rather than claim that a certain percentage of applications are insecure, I want to find out which patterns occur in the sample and how much confidence a reviewer can place in the automated findings.
+| Stage | Planned method |
+| :--- | :--- |
+| **Select** | Define a documented sample of suitable public repositories and clear inclusion rules. |
+| **Analyze** | Run established static-analysis tools against supported code and configuration patterns. |
+| **Check** | Manually inspect a subset of results to understand false positives and context. |
+| **Compare** | Report recurring findings, tool limitations, and differences between technology stacks. |
+| **Reproduce** | Make the selection process, rule sets, and sanitized outputs available where appropriate. |
 
-The first steps are to narrow the research questions, agree on a sampling method, and identify a supervisor who can help evaluate the methodology.
+The aim is to understand what the tools actually show, not to turn scanner output into unsupported claims about the security of an entire ecosystem.
 
-## Possible graduate directions
+## Graduation research direction
 
-I expect to graduate in **2028** and plan to apply directly to English-taught graduate study, without taking a planned gap year.
+**Proposed capstone:** *A Hybrid Vulnerability Analysis Framework for Modern Microservices Architecture*.
 
-Programs I want to investigate include master's degrees in **Information Security, Security Informatics, Software Engineering, and Applied Artificial Intelligence**, as well as research-oriented **Computer Science PhD** routes where bachelor's-to-PhD admission is possible.
+I want to explore combining source-level evidence from static analysis with runtime evidence from controlled API testing. The important question is whether the combination makes findings easier to verify and prioritize, not whether a dashboard can display more alerts.
 
-I am exploring research groups working on software security, program analysis, fuzzing, formal methods, usable security, and secure development workflows.
+## Graduate study after 2028
 
-I will maintain a shortlist based on actual admission criteria, thesis or research opportunities, English-language requirements, funding, and faculty availability. A university name on a list is not an offer or a confirmed supervision arrangement.
+I expect to complete my Software Engineering degree in **2028** and intend to apply directly to English-taught graduate study, without a planned gap year.
 
-## Progress log
+| Program direction | Why it interests me |
+| :--- | :--- |
+| **M.S. in Information Security (MSIS)** | Secure systems, trustworthy applications, and rigorous security practice. |
+| **M.S. in Security Informatics (MSSI)** | Software and systems security research with hands-on evaluation. |
+| **Master's in Applied Artificial Intelligence** | Evaluating the practical role of AI in secure development and analysis. |
+| **Direct-entry PhD in Computer Science, cybersecurity focus** | A longer-term research route, if admission and research fit are right. |
 
-- **2026:** Define project scope, begin prototypes, identify useful security-testing baselines.
-- **2027:** Strengthen implementations, collect defensible evaluation results, and seek research supervision.
-- **2027–2028:** Prepare applications for programs with suitable admission and funding timelines.
-- **2028:** Complete degree requirements and apply or transition to the next academic stage, subject to individual deadlines.
+A degree title on this page is a **direction to investigate**, not an offer or a claim that a specific program accepts direct-entry applicants. I will check funding, supervisors, prerequisites, and application timelines with each university.
+
+## My working timeline
+
+| When | Focus |
+| :--- | :--- |
+| **2026** | Build narrow prototypes and select a research question worth evaluating. |
+| **2027** | Test projects, document findings, identify supervisors, and prepare applications. |
+| **2027–2028** | Apply to suitable graduate programs according to their deadlines. |
+| **2028** | Complete degree and capstone requirements and pursue the next stage of study. |
+
+As i believes always, Research begins long before a paper appears. For now, the work is in writing better questions and building experiments that might answer them.

@@ -4,61 +4,75 @@ title: projects
 permalink: /projects/
 nav: true
 nav_order: 3
-description: Security tools and software testing projects in development.
+description: A working collection of developer-facing security tools and experiments.
 ---
 
-This is my working project log. I am building tools that help developers find security problems earlier, understand their causes, and make fixes easier to verify. I will add implementation links and test results as the projects progress.
+I want these projects to be more than attractive dashboards. Each one starts with a developer problem, a testable idea, and an honest account of what still needs work. **All three tools are in development.** Results and repositories will be added as implementations mature.
 
 ## CommitGuard
 
-**Status: In development** | **Area: DevSecOps and software supply-chain security**
+| | |
+| :--- | :--- |
+| **01 / DEVSECOPS** | **In development** |
+| **Problem** | Secrets can reach a repository before anyone notices. Dependency warnings can be buried in noise. |
+| **Approach** | Run small, explainable checks close to the commit and pull-request workflow. |
+| **Planned stack** | Python · GitHub Actions · Docker · pattern matching |
+| **What I'd like to measure** | Detection coverage, false positives, scan time, and how actionable the findings are. |
 
-A repository check for accidental secret exposure and risky third-party dependencies. The idea is to put useful feedback close to the development workflow, before insecure changes become difficult to trace.
+The first version will concentrate on credential patterns, dependency manifests, and readable reports. I'd rather produce one finding a developer understands than ten warnings they immediately dismiss.
 
-**Planned stack:** Python, regular expressions, Docker, GitHub Actions.
-
-**Planned work:** Secret-pattern detection, dependency manifest checks, structured findings, test fixtures, and a CI workflow that can fail safely when a high-confidence finding appears. False positives and exclusions will be recorded rather than hidden.
-
-**Evidence to publish:** Test repositories, representative findings, CI logs, a threat model, and comparison against existing secret scanners.
+**Planned evidence:** Test fixtures, sanitized CI logs, comparison with established scanners, and clearly documented limitations.
 
 ---
 
 ## FuzzRoute
 
-**Status: In development** | **Area: REST API security testing**
+| | |
+| :--- | :--- |
+| **02 / API SECURITY** | **In development** |
+| **Problem** | REST endpoints often behave differently with unexpected input or incomplete authentication checks. |
+| **Approach** | Read an OpenAPI definition and generate controlled tests against an isolated or explicitly authorized service. |
+| **Planned stack** | Go or Node.js · OpenAPI · containerized test API |
+| **What I'd like to measure** | Reproducible failures, endpoint coverage, noisy results, and missed edge cases. |
 
-FuzzRoute is my plan for an API testing tool that reads an OpenAPI specification and generates controlled requests to find unexpected behavior. The first version will focus on parameter validation, unexpected status codes, authentication boundaries, and crash-resistant reporting.
+FuzzRoute starts from the API contract. I'm interested in how much useful coverage a specification can give us, where it leaves blind spots, and whether the tool can show developers enough context to reproduce an issue.
 
-**Planned stack:** Go or Node.js, OpenAPI, containerized test services.
-
-**Planned work:** Parse specifications, generate constrained test cases, send requests only to owned or explicitly authorized test services, capture responses, and group reproducible findings.
-
-**Evidence to publish:** An intentionally vulnerable local API, reproducible test cases, coverage information, and limitations compared with established API testing tools.
+**Planned evidence:** A small intentionally vulnerable local API, saved request cases, and comparisons with existing API-testing tools.
 
 ---
 
 ## AuthAudit
 
-**Status: In development** | **Area: Authentication and source-code analysis**
+| | |
+| :--- | :--- |
+| **03 / AUTHENTICATION** | **In development** |
+| **Problem** | Authentication mistakes can hide in ordinary configuration and token-handling code. |
+| **Approach** | Start with a narrow set of JWT and OAuth anti-patterns that can be tested reliably. |
+| **Planned stack** | Python · AST parsing · Bash · unit tests |
+| **What I'd like to measure** | Precision, false alarms, supported patterns, and situations static analysis cannot resolve. |
 
-A source-code checker for insecure JWT handling and common authentication mistakes. The project starts with a narrow set of patterns that can be tested precisely before expanding to other frameworks.
+I'd like AuthAudit to explain why a pattern deserves attention rather than simply label it insecure. Understanding the limits of static checking is part of the work.
 
-**Planned stack:** Python, AST parsing, Bash, unit tests.
-
-**Planned work:** Identify missing token-expiration checks, incorrect algorithm validation, weak verification patterns, and risky configuration defaults in supported codebases.
-
-**Evidence to publish:** Small vulnerable/fixed examples, detection rules, accuracy notes, and a clear explanation of unsupported patterns.
+**Planned evidence:** Vulnerable/fixed examples, detection rules, and documented cases the checker does not understand.
 
 ---
 
-## Graduation capstone: hybrid vulnerability analysis
+## Graduation capstone
 
-**Status: Proposed for 2028 graduation**
+| | |
+| :--- | :--- |
+| **04 / PROPOSED THESIS · 2028** | **Subject to academic approval** |
+| **Working title** | *A Hybrid Vulnerability Analysis Framework for Modern Microservices Architecture* |
+| **Core idea** | Correlate static code-analysis findings with controlled dynamic API tests. |
+| **Study design** | An isolated demonstration application, baseline scanners, reproducible issues, and evaluation of detection quality. |
+| **What I'd like to learn** | Whether combining evidence helps prioritize genuine weaknesses and reduce duplicate alerts. |
 
-**Working title:** *A Hybrid Vulnerability Analysis Framework for Modern Microservices Architecture*
+This is a proposed graduation project, not a completed system. My aim is to develop something small enough to evaluate carefully but substantial enough to support a serious discussion of software security.
 
-The proposed capstone would connect static findings from application code with observations from controlled dynamic API tests. I want to study whether connecting those two forms of evidence helps developers prioritize reproducible weaknesses.
+## How I document progress
 
-The planned evaluation includes an intentionally vulnerable demonstration service, baseline scanners, controlled experiments, and measured false-positive rates. Any performance claims will depend on collected results rather than assumptions.
+| Build | Test | Explain |
+| :--- | :--- | :--- |
+| Working code and reproducible setup | Defined test cases and failure analysis | Limits, trade-offs, and results others can question |
 
-**Research direction:** Secure software architecture, static and dynamic testing, vulnerability triage.
+You can follow the [research plan](/research/) and browse my [GitHub repositories](https://github.com/Kaisix7).

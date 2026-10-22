@@ -1,13 +1,31 @@
-# Graduate study plan: Karina Baitenova
+# Karina's graduate preparation roadmap
 
-**Target:** Graduate in 2028, then enter an English-taught master's or eligible direct-entry PhD without a planned gap year.
+I expect to graduate in **2028** and intend to apply directly to English-taught graduate study without a planned gap year.
 
-Current study is software engineering in a Russian-language group. The aim is to use practical software-building experience to enter secure systems, application security, and software testing research.
+## Programs I am exploring
 
-## Graduate program types
+- M.S. in Information Security (MSIS)
+- M.S. in Security Informatics (MSSI)
+- Master's in Applied Artificial Intelligence
+- Direct-entry PhD in Computer Science, specializing in cybersecurity or software/systems security, if eligible
 
-- M.S. Information Security or Security Informatics
-- M.S. Software Engineering with security coursework or research
-- M.S. Applied Artificial Intelligence, with a software security application
-- Research M.S. or MMath Computer Science in software/systems security
-- Direct-entry PhD Computer Science, where bachelor's-level admission is allowed
+I am not pursuing a general Software Engineering master's route in this plan. My undergraduate engineering background is the foundation for a research shift toward application and systems security.
+
+## Evidence I want to build
+
+- **CommitGuard:** reproducible CI checks and false-positive assessment
+- **FuzzRoute:** controlled API tests and useful failure reports
+- **AuthAudit:** source-analysis rules with verified positive and negative cases
+- **Research study:** reproducible methodology and honestly reviewed findings
+- **Capstone proposal:** hybrid static/dynamic vulnerability analysis
+
+## Timing
+
+| Period | Priorities |
+| :--- | :--- |
+| 2026 | Project foundations, core skills, narrow research scope |
+| 2027 | Implementation evidence, evaluations, mentor conversations, application preparation |
+| 2027–2028 | Applications, references, language requirements, funding investigation |
+| 2028 | Graduation and planned direct transition, subject to admission and timing |
+
+CMU, Johns Hopkins, Northeastern, Waterloo, USC, CISPA-associated groups, KAUST, and DePaul are possibilities to investigate, not confirmed offers or funding opportunities. Official program eligibility, faculty availability, and scholarships must be checked for the intended application cycle.

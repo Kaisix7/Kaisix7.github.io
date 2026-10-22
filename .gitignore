@@ -5,3 +5,7 @@ _site/
 .jekyll-metadata
 .sass-cache/
 vendor/
+
+backups/
+
+Karina_Portfolio_Redesign/

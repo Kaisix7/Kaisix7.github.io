@@ -4,11 +4,22 @@ title: publications
 permalink: /publications/
 nav: true
 nav_order: 5
-description: Papers, posters and research work, when available.
+description: Research writing and publication status.
 ---
 
-I have not listed any peer-reviewed publications yet. I would rather keep this page accurate than turn research ideas into publication claims.
+# Publications and research writing
 
-My current proposal concerns security anti-patterns in open-source React and Flutter applications. I plan to share a preprint, poster, dataset description, or accepted paper here only when it exists, with its actual status and citation.
+I am developing my first empirical security research study. I haven't listed a peer-reviewed paper here because I do not have a verified publication to link yet.
 
-For now, see my [research plan](/research/) and [projects](/projects/).
+## Current writing pipeline
+
+| Work | Type | Status |
+| :--- | :--- | :--- |
+| *Security Anti-Patterns in Open-Source React and Flutter Applications* | Proposed empirical study | Research design stage |
+| *Hybrid Vulnerability Analysis for Microservices* | Proposed graduation capstone | Scope and supervision to be determined |
+
+When a paper, poster, or preprint exists, this page will include the correct title, co-authors, publication venue, and permanent link. Research ideas are not published papers.
+
+## Research profiles
+
+[**ORCID ↗**](https://orcid.org/0009-0003-4256-6862) · [**ResearchGate ↗**](https://www.researchgate.net/profile/Karina-Baitenova)

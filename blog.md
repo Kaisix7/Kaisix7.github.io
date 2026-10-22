@@ -4,16 +4,22 @@ title: notes
 permalink: /blog/
 nav: true
 nav_order: 2
-description: Development notes and research questions.
+description: Engineering notes and questions I'm investigating.
 ---
 
-I use this space for short technical notes: a question, what I tested, and what I learned. I want to be able to look back later and understand why I made a particular engineering decision.
+# Field notes
 
-## Topics I'm working through
+I don't want a blog filled with polished conclusions about work I haven't done yet. This is a place to keep useful questions, describe experiments as I complete them, and show how my thinking changes when the code disagrees with my assumptions.
 
-- How to compare secret scanners without confusing pattern matching with real exposure.
-- What makes a useful security finding in API fuzzing.
-- How to test authentication code when a static checker cannot understand full application behavior.
-- How to report false positives and limitations in a reproducible study.
+## Questions on my desk
 
-As the projects progress, I will publish dated posts with code references and results. There are no finished articles claimed here yet.
+| Topic | What I'd like to explore | Status |
+| :--- | :--- | :--- |
+| **Secrets in CI** | When is a pattern match enough to stop a change? | Planned note |
+| **OpenAPI fuzzing** | What do API specifications miss about real application behavior? | Planned note |
+| **JWT validation** | What can static analysis determine about authentication code? | Planned note |
+| **Research methods** | How do you report false positives without misleading readers? | Planned note |
+
+I will add dated posts when I have implementations, test cases, or useful findings to share. Until then, these are questions rather than articles.
+
+[Explore the projects](/projects/) · [Read the research plan](/research/)

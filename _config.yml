@@ -54,6 +54,7 @@ profile:
 
 socials:
   github: Kaisix7
+  linkedin: karina-b-a022311b1x
   orcid: 0009-0003-4256-6862
 
 navbar_fixed: true
@@ -101,13 +102,7 @@ kramdown:
       line_numbers: false
       start_line: 1
 include:
-  - about.md
-  - blog.md
-  - projects.md
-  - publications.md
-  - repositories.md
-  - cv.md
-  - research.md
+  - _pages
 keep_files:
   - CNAME
   - .nojekyll
@@ -207,6 +202,9 @@ jekyll-minifier:
   compress_javascript: false
   compress_css: false
   exclude:
+  - backups
+  - Karina_Portfolio_Redesign
+  - Karina_Baitenova_Academic_Portfolio
     - robots.txt
 imagemagick:
   enabled: false

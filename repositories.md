@@ -4,19 +4,26 @@ title: code
 permalink: /repositories/
 nav: true
 nav_order: 6
-description: Code, experiments and reproducible engineering work.
+description: Code and reproducible experiments.
 ---
 
-I use GitHub to document what I'm building and to keep experiments reproducible. The goal is to publish useful code and honest technical notes, including the parts that did not work on the first attempt.
+# Code that can be examined
 
-### Current development priorities
+I want my repositories to make sense to someone who wasn't there when the code was written. That means a clear setup, small reproducible examples, sensible tests, and honest documentation about what works and what doesn't.
 
-**CommitGuard:** secret scanning and dependency checks integrated with a CI workflow.
+## Repository plans
 
-**FuzzRoute:** specification-driven API testing against locally controlled services.
+| Project | Planned repository focus | Stage |
+| :--- | :--- | :--- |
+| **CommitGuard** | Rules, CLI, CI examples, test fixtures | In development |
+| **FuzzRoute** | OpenAPI parser, safe test runner, reporting | In development |
+| **AuthAudit** | Source-analysis rules and vulnerable/fixed examples | In development |
+| **Hybrid capstone** | Integrated scanner, isolated services, evaluation | Proposed |
 
-**AuthAudit:** source-based checks for authentication and JWT validation mistakes.
+No repository link here should imply that a private or unfinished implementation is public. I will add specific project links after the code is ready to share.
 
-I will link individual repositories here as soon as I have code and tests ready to share. The projects described above are not presented as released tools.
+## GitHub
 
-[See my GitHub repositories](https://github.com/Kaisix7?tab=repositories)
+[**Browse my repositories ↗**](https://github.com/Kaisix7?tab=repositories)
+
+For questions about my research direction, see [Research](/research/). For the design and purpose of each tool, see [Projects](/projects/).
