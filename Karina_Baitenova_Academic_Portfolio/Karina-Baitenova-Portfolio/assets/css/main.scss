@@ -1,0 +1,37 @@
+---
+---
+@charset "utf-8";
+@use "sass:math";
+@use "sass:string";
+@use "variables" with (
+  $max-content-width: {{ site.max_width | default: "930px" }}
+);
+@use "themes";
+@use "layout";
+@use "typography";
+@use "navbar";
+@use "footer";
+@use "blog";
+@use "publications";
+@use "components";
+@use "utilities";
+@use "tabs";
+@use "teachings";
+@use "typograms";
+
+/* Desktop navigation fix retained for al-folio v1 Bootstrap compatibility. */
+@media screen and (min-width: 576px) {
+  #navbar.navbar-expand-sm .navbar-collapse-main {
+    display: flex !important;
+    flex-basis: auto !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+  #navbar.navbar-expand-sm .navbar-menu-list {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    margin-left: auto !important;
+  }
+  #navbar.navbar-expand-sm .navbar-toggler-main { display: none !important; }
+}

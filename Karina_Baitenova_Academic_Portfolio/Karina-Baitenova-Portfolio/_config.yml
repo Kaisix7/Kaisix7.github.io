@@ -1,0 +1,283 @@
+title: Karina Baitenova
+first_name: Karina
+middle_name:
+last_name: Baitenova
+navbar_title: Karina Baitenova
+lang: en
+description: >-
+  Karina Baitenova studies software engineering and is exploring secure software
+  development, vulnerability analysis, and software testing. She is preparing
+  for graduate study in information security, software engineering, or applied AI.
+keywords: "secure software engineering, application security, vulnerability analysis, DevSecOps, software testing, graduate research"
+footer_text: ""
+url: "https://kaisix7.github.io"
+baseurl: ""
+icon: "kb-favicon.svg"
+last_updated: false
+back_to_top: true
+
+theme: al_folio_core
+al_folio:
+  api_version: 1
+  style_engine: tailwind
+  tailwind:
+    version: "4.1.18"
+    preflight: false
+    css_entry: assets/tailwind/app.css
+  distill:
+    engine: distillpub-template
+    source: al-org-dev/distill-template#al-folio
+    allow_remote_loader: false
+  features:
+    cv:
+      enabled: false
+    distill:
+      enabled: false
+  compat:
+    bootstrap:
+      enabled: true
+      support_window: v1.0-v1.2
+      deprecates_in: v1.3
+      removed_in: v2.0
+  upgrade:
+    channel: stable
+    auto_apply_safe_fixes: false
+
+profile:
+  align: right
+  image: prof_pic.jpg
+  image_circular: true
+  more_info: >-
+    <p>Software Engineering</p>
+    <p>Secure Software Systems</p>
+    <p>Graduating in 2028</p>
+
+socials:
+  github: Kaisix7
+  orcid: 0009-0003-4256-6862
+
+navbar_fixed: true
+footer_fixed: false
+max_width: 930px
+search_enabled: false
+socials_in_search: false
+posts_in_search: false
+bib_search: false
+enable_darkmode: true
+enable_project_categories: true
+enable_project_tags: true
+enable_masonry: false
+enable_math: true
+enable_tooltips: false
+enable_medium_zoom: false
+enable_progressbar: false
+enable_navbar_social: false
+enable_publication_thumbnails: false
+enable_video_embedding: false
+enable_google_analytics: false
+enable_cookie_consent: false
+enable_google_verification: false
+enable_bing_verification: false
+serve_og_meta: false
+serve_schema_org: false
+lazy_loading_images: true
+protect_email: false
+repo_theme_light: default
+repo_theme_dark: dark
+repo_trophies:
+  enabled: false
+  theme_light: flat
+  theme_dark: dark
+markdown: kramdown
+highlighter: rouge
+permalink: /blog/:year/:title/
+kramdown:
+  input: GFM
+  syntax_highlighter_opts:
+    css_class: highlight
+    span:
+      line_numbers: false
+    block:
+      line_numbers: false
+      start_line: 1
+include:
+  - about.md
+  - blog.md
+  - projects.md
+  - publications.md
+  - repositories.md
+  - cv.md
+  - research.md
+keep_files:
+  - CNAME
+  - .nojekyll
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
+  news:
+    output: true
+    permalink: /news/:path/
+defaults:
+  - scope:
+      path: assets
+    values:
+      sitemap: false
+plugins:
+  - jekyll-3rd-party-libraries
+  - jekyll-archives-v2
+  - jekyll-cache-bust
+  - jekyll-email-protect
+  - jekyll-feed
+  - jekyll-get-json
+  - jekyll-imagemagick
+  - jekyll-jupyter-notebook
+  - jekyll-link-attributes
+  - jekyll-minifier
+  - jekyll-paginate-v2
+  - jekyll-regex-replace
+  - jekyll/scholar
+  - jekyll-sitemap
+  - jekyll-socials
+  - jekyll-tabs
+  - jekyll-toc
+  - jekyll-twitter-plugin
+  - jemoji
+  - al_folio_core
+  - al_icons
+  - al_folio_cv
+  - al_folio_distill
+  - al_folio_upgrade
+  - al_folio_bootstrap_compat
+  - al_cookie
+  - al_analytics
+  - al_citations
+  - al_ext_posts
+  - al_img_tools
+  - al_search
+  - al_charts
+  - al_math
+  - al_comments
+  - al_newsletter
+  - al_email_protect
+  - al_marimo
+  - al_rtl
+scholar:
+  last_name: [Baitenova]
+  first_name: [Karina]
+  style: apa
+  locale: en
+  source: /_bibliography/
+  bibliography: papers.bib
+  bibliography_template: bib
+  replace_strings: true
+  join_strings: true
+  details_dir: bibliography
+  details_link: Details
+  query: "@*"
+  group_by: year
+  group_order: descending
+enable_publication_badges:
+  altmetric: false
+  dimensions: false
+  google_scholar: false
+  inspirehep: false
+filtered_bibtex_keywords:
+  - abbr
+  - abstract
+  - annotation
+  - arxiv
+  - bibtex_show
+  - code
+  - google_scholar_id
+  - html
+  - pdf
+  - preview
+  - selected
+  - website
+max_author_limit: 3
+external_links:
+  enabled: true
+  rel: external noopener noreferrer
+  target: _blank
+  exclude: []
+sass:
+  style: compressed
+jekyll-minifier:
+  compress_javascript: false
+  compress_css: false
+  exclude:
+    - robots.txt
+imagemagick:
+  enabled: false
+third_party_libraries:
+  download: false
+  bootstrap-table:
+    integrity:
+      css: "sha256-uRX+PiRTR4ysKFRCykT8HLuRCub26LgXJZym3Yeom1c="
+      js: "sha256-4rppopQE9POKfukn2kEvhJ9Um25Cf6+IDVkARD0xh78="
+    url:
+      css: "https://cdn.jsdelivr.net/npm/bootstrap-table@{{version}}/dist/bootstrap-table.min.css"
+      js: "https://cdn.jsdelivr.net/npm/bootstrap-table@{{version}}/dist/bootstrap-table.min.js"
+    version: "1.22.4"
+  fontawesome:
+    integrity:
+      css: "sha256-MVopmdyC2tYTiJ8wlktf0uh0v4NgT+vNdyVFepi7Q0c="
+    url:
+      css: "https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@{{version}}/css/all.min.css"
+    version: "7.2.0"
+  academicons:
+    integrity:
+      css: "sha256-SzrCOBJbGVFMahewkgjwnApaV2+av1DwMAA+/QGLyZw="
+    url:
+      css: "https://cdn.jsdelivr.net/npm/academicons@{{version}}/css/academicons.min.css"
+    version: "1.9.5"
+  jquery:
+    integrity:
+      js: "sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    url:
+      js: "https://cdn.jsdelivr.net/npm/jquery@{{version}}/dist/jquery.min.js"
+    version: "3.6.0"
+  imagesloaded:
+    integrity:
+      js: "sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc="
+    url:
+      js: "https://cdn.jsdelivr.net/npm/imagesloaded@{{version}}/imagesloaded.pkgd.min.js"
+    version: "5.0.0"
+  masonry:
+    integrity:
+      js: "sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI="
+    url:
+      js: "https://cdn.jsdelivr.net/npm/masonry-layout@{{version}}/dist/masonry.pkgd.min.js"
+    version: "4.2.2"
+  mathjax:
+    integrity:
+      js: "sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI="
+    local:
+      fonts: "output/chtml/fonts/woff-v2/"
+    url:
+      fonts: "https://cdn.jsdelivr.net/npm/mathjax@{{version}}/es5/output/chtml/fonts/woff-v2/"
+      js: "https://cdn.jsdelivr.net/npm/mathjax@{{version}}/es5/tex-mml-chtml.js"
+    version: "3.2.2"
+pagination:
+  enabled: false
+jekyll-archives:
+  posts:
+    enabled: []
+  books:
+    enabled: []
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENSE
+  - SETUP_FOR_KARINA.md
+  - GRADUATE_ROADMAP.md
+  - RESEARCH_PLAN.md
+  - CONTRIBUTING.md
+  - vendor
+  - node_modules
+  - .bundle
+  - .github
+  - _site
+  - .jekyll-cache
