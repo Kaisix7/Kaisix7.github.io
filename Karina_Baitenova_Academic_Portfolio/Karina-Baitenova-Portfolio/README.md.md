@@ -77,29 +77,3 @@ My near-term priorities are straightforward: build tools I can explain line by l
 > I value thoughtful reviews, reproducible experiments, and feedback that makes a piece of software genuinely better. If you're working on secure development, testing, or software security research, I'd be glad to connect.
 
 ---
-
-## About this website and repository
-
-This repository contains my academic portfolio, built with **Jekyll 4.4** and **al-folio v1.0.15**. The theme and configuration started from an existing customized portfolio shared with permission, then were adapted to my own writing, design choices, and research direction.
-
-- [`about.md`](about.md): background and interests
-- [`projects.md`](projects.md): projects in development and capstone proposal
-- [`research.md`](research.md): research questions and graduate interests
-- [`publications.md`](publications.md): publication status; no invented citations
-- [`repositories.md`](repositories.md): code and experiments
-- [`blog.md`](blog.md): occasional engineering notes
-- [`cv.md`](cv.md): academic CV page
-
-### Local development
-
-```bash
-bundle install
-bundle exec jekyll doctor
-bundle exec jekyll build --trace
-bundle exec jekyll serve --host 0.0.0.0 --port 4000 --force_polling --watch
-```
-
-The original theme is [al-folio](https://github.com/alshedivat/al-folio). Its licenses and any third-party notices should remain intact.
-
-
-  *Built one experiment, one review, and one better question at a time.*
