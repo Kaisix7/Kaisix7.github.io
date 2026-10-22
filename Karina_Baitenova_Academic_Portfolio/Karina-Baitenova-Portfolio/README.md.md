@@ -89,7 +89,6 @@ This repository contains my academic portfolio, built with **Jekyll 4.4** and **
 - [`repositories.md`](repositories.md): code and experiments
 - [`blog.md`](blog.md): occasional engineering notes
 - [`cv.md`](cv.md): academic CV page
-- [`SETUP_FOR_KARINA.md`](SETUP_FOR_KARINA.md): photo replacement and deployment checks
 
 ### Local development
 
