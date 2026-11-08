@@ -11,6 +11,14 @@ description: Code and reproducible experiments.
 
 I want my repositories to make sense to someone who wasn't there when the code was written. That means a clear setup, small reproducible examples, sensible tests, and honest documentation about what works and what doesn't.
 
+## Public Repositories
+
+| Repository | Focus & Architecture | Status |
+| :--- | :--- | :--- |
+| [**SWYNEX-SubGuard-App-Concept**](https://github.com/Kaisix7/SWYNEX-SubGuard-App-Concept) | Full-stack platform: Flutter multi-platform client, Django REST backend, PostgreSQL, Redis, Celery, and Docker. | Active |
+| [**Investment-Portfolio**](https://github.com/Kaisix7/Investment-Portfolio) | Markowitz modern portfolio theory, GMV optimization, covariance analysis, and programmatic mathematical verification. | Active |
+| [**GCI-World**](https://github.com/Kaisix7/GCI-World) | Financial machine learning modeling for default risk, financial ratios, and automated CI test suite. | Active |
+
 ## Repository plans
 
 | Project | Planned repository focus | Stage |
